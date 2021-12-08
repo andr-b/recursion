@@ -13,11 +13,13 @@ if (n == 0)
 	 return 1;
 }else 
 {
-unsigned long long int result = Fibonacci(n - 1) + Fibonacci(n -2);
+unsigned long long int result = Fibonacci(n - 1) + Fibonacci(n -2) + 1;
 return result;
 }
 }
 int main() {
-std::cout << Fibonacci(10) << "\n";
+	size_t i = 0;
+	std::cin >> i;
+std::cout << Fibonacci(i) << "\n";
 return 0;
 }
