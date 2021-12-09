@@ -1,5 +1,7 @@
 #include <iostream>
 #include <stdexcept>
+#include <string>
+#include "parse.h"
 
 unsigned long long int Fibonacci(size_t n) 
 {
@@ -18,8 +20,30 @@ return result;
 }
 }
 int main() {
-	size_t i = 0;
-	std::cin >> i;
-std::cout << Fibonacci(i) << "\n";
+	std::string input;
+	int i(0);	
+	while(true) {	
+	std::cout << "H - help; Q - quit\n";
+	std::cout << "Or enter a number:\n";
+	std::cin >> input;
+	InputResult result = Parse(input, i);
+	if (result == InputResult::HELP) 
+	{
+		std::cout << "Help\n";
+	}
+	else if (result == InputResult::NUMBER)
+	{
+		std::cout << "Number";
+	}
+	else if (result == InputResult::QUIT)
+	{
+		break;
+	}
+	else
+	{
+		std::cout << "Enter a positive number or command\n";
+		continue;
+	}
+	}
 return 0;
 }
