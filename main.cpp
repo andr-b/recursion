@@ -33,7 +33,8 @@ int main() {
 	}
 	else if (result == InputResult::NUMBER)
 	{
-		std::cout << "Number";
+		std::cout << "Sum of first" << i << "fibonacci numbers is:\n";
+		std::cout << Fibonacci(i) << "\n";
 	}
 	else if (result == InputResult::QUIT)
 	{

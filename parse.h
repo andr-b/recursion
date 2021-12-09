@@ -5,7 +5,8 @@ enum class InputResult
 {
 HELP,
 QUIT,
-NUMBER
+NUMBER,
+WRONG
 };
 
 InputResult Parse(const std::string &input, int &i);

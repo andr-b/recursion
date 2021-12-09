@@ -10,4 +10,15 @@ InputResult Parse(const std::string &input, int &i)
 	{
 		return InputResult::QUIT;
 	}
+	if (std::isdigit(input[0])) 
+	{
+	for (auto x:input)
+		{
+			if (!std::isdigit(x))
+				return InputResult::WRONG;
+		}
+	i = stoi(input);
+	return InputResult::NUMBER;
+	}
+	return InputResult::WRONG;
 }
