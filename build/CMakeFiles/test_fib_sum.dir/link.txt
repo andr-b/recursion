@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/test_fib_sum.dir/fcn.cpp.o CMakeFiles/test_fib_sum.dir/test/test.cpp.o  -o test_fib_sum  lib/libgtest.a lib/libgtest_main.a lib/libgtest.a -lpthread 
