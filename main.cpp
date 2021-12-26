@@ -3,7 +3,7 @@
 #include <string>
 #include "parse.h"
 
-unsigned long long int Fibonacci(size_t n) 
+unsigned long long int Fibonacci(int n) 
 {
 if (n < 0) 
 	throw std::invalid_argument("Should not be negative!!\n");
@@ -12,10 +12,12 @@ if (n == 0)
 	return 0;
 } if(n == 1) 
 {
-	 return 1;
+	 return 0;
+} if(n == 2){
+	return 1;
 }else 
 {
-unsigned long long int result = Fibonacci(n - 1) + Fibonacci(n -2) + 1;
+unsigned long long int result = Fibonacci(n - 1) + Fibonacci(n - 2) + 1;
 return result;
 }
 }
@@ -33,7 +35,7 @@ int main() {
 	}
 	else if (result == InputResult::NUMBER)
 	{
-		std::cout << "Sum of first" << i << "fibonacci numbers is:\n";
+		std::cout << "Sum of first " << i << " fibonacci numbers is:\n";
 		std::cout << Fibonacci(i) << "\n";
 	}
 	else if (result == InputResult::QUIT)

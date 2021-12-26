@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mdjer/progs/globallogic/recursion/main.cpp
+iostream
+-
+stdexcept
+-
+string
+-
+parse.h
+/home/mdjer/progs/globallogic/recursion/parse.h
+
+/home/mdjer/progs/globallogic/recursion/parse.h
+string
+-
+
