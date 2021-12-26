@@ -26,7 +26,7 @@ int main() {
 	int i(0);	
 	while(true) {	
 	std::cout << "H - help; Q - quit\n";
-	std::cout << "Or enter a number:\n";
+	std::cout << "Or enter a number: \n";
 	std::cin >> input;
 	InputResult result = Parse(input, i);
 	if (result == InputResult::HELP) 
